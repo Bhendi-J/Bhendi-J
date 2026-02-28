@@ -1,16 +1,20 @@
-## Hi there 👋
+# Hi, I'm Jatin Nimje 👋
 
-<!--
-**Bhendi-J/Bhendi-J** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Full-Stack Developer | Python (Flask) | Backend Systems
 
-Here are some ideas to get you started:
+I build scalable web applications with focus on backend architecture,
+authentication systems, and workflow automation.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Featured Projects
+
+🔹 COOPER — Expense & Event Management Platform  
+🔹 Gamified Blog System — Engagement-driven content platform  
+🔹 Prepify — AI-assisted learning platform  
+
+## Tech Stack
+
+Python • Flask • React • MongoDB • TypeScript • REST APIs • JWT
+
+## Currently Working On
+
+Integrated Patient Management System with queue optimization
