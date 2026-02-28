@@ -13,7 +13,7 @@ authentication systems, and workflow automation.
 
 ## Tech Stack
 
-Python • Flask • React • MongoDB • TypeScript • REST APIs • JWT
+Python • Flask • React • MongoDB • REST APIs • JWT
 
 ## Currently Working On
 
