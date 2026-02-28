@@ -1,6 +1,6 @@
 # Hi, I'm Jatin Nimje 👋
 
-Full-Stack Developer | Python (Flask) | Backend Systems
+Python (Flask) | Backend Systems
 
 I build scalable web applications with focus on backend architecture,
 authentication systems, and workflow automation.
