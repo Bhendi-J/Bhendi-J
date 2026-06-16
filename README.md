@@ -1,4 +1,4 @@
-# Hi, I'm Jatin Nimje 👋
+# Hi, I'm Jatin Nimje 
 
 Python (Flask) | Backend Systems
 
