@@ -17,4 +17,4 @@ Python • Flask • React • MongoDB • REST APIs • JWT
 
 ## Currently Working On
 
-Integrated Patient Management System with queue optimization
+Integrated Decision Making system for middleman services
