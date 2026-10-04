@@ -21,7 +21,7 @@
 
 I build backend systems where the interesting part is the architecture: async pipelines, retrieval, scheduling algorithms and ML models served behind clean APIs.
 
-- Final-year Computer Engineering student at **Thadomal Shahani Engineering College (TSEC), Mumbai**
+- Final-year Computer Engineering student at **Thadomal Shahani Engineering College (TSEC), Mumbai** (CGPA 9.725 / 10, graduating May 2027)
 - Working across **FastAPI, Flask, PostgreSQL and MongoDB**, with a growing focus on **RAG, ML serving and cloud deployment**
 - Looking for **backend SDE and AI/ML roles**
 
@@ -29,44 +29,44 @@ I build backend systems where the interesting part is the architecture: async pi
 
 ## Featured Projects
 
-### DecisionIQ: AI-Powered Business Risk Platform
-*Final-year project, team of 4, in active development*
-
-Decision support for SMEs that combines a **Finance Intelligence Agent** (Prophet cash-flow forecasting, XGBoost cash-crunch classification, SHAP explanations) with a **Security Intelligence Agent** (DistilBERT phishing detection, Isolation Forest login anomalies). A GenAI layer narrates risk in plain English, and a What-If sandbox lets users re-simulate scenarios with sliders.
-
-My part: API gateway and routing, and cloud deployment.
-
-`FastAPI` `Prophet` `XGBoost` `SHAP` `DistilBERT` `Gemini API` `React` `Render`
-
----
-
-### Prepify: Adaptive Study Intelligence Platform
+### Prepify: AI-Based Student Preparation Platform
 *RAG-based, deployed*
 
-Upload notes, and an async worker chunks and embeds them into **pgvector**. Retrieval is scoped per user and topic, an LLM generates practice questions in batches, and an **SM-2 spaced repetition engine** schedules reviews based on per-topic mastery.
+Upload study material and an async pipeline extracts, chunks and embeds it without blocking the API. Semantic search over **pgvector** retrieves the most relevant parts of a student's notes, an LLM generates grounded practice questions from that context, and an **SM-2 spaced repetition engine** uses attempt history and topic mastery to decide what to revise next.
 
-`FastAPI` `PostgreSQL + pgvector` `Celery + Redis` `Hugging Face Inference` `React + TypeScript`
-Deployed on Render, Neon, Upstash and Vercel.
+`Python` `FastAPI` `PostgreSQL` `pgvector` `Celery` `Redis` `RAG`
+
+Deployed across Render, Vercel, Neon Postgres and Upstash Redis, with the ingestion queue decoupled from the API host so each can scale independently.
 
 [Repository](https://github.com/Bhendi-J/Prepify)
 
 ---
 
-### FlowDesk: Project Scheduling Sandbox
+### FlowDesk: Graph-Based Scheduling Sandbox
 *CPM, resource constraints and Monte Carlo*
 
-A DAG-based scheduler that shows the gap between dependency-only completion time and completion time under real resource limits. Includes cycle detection, topological sort, critical path analysis, a greedy resource-constrained scheduler and Monte Carlo simulation with P10/P50/P90 outputs.
+Models project workflows as DAGs and shows the gap between a dependency-only schedule and one that respects real resource limits.
 
-`FastAPI` `SQLAlchemy` `Pydantic` `React` `React Flow`
+- DFS-based cycle detection rejects dependency inserts that would create cycles
+- Kahn's topological sort and the Critical Path Method calculate task timings, slack and the critical path
+- A resource-constrained scheduling heuristic with interval-based capacity reservation models multi-resource contention
+- Monte Carlo simulation samples triangular duration distributions to estimate completion-time uncertainty (p10/p50/p90) across up to 5,000 trials
+
+`Python` `FastAPI` `SQLAlchemy` `SQLite` `React` `React Flow` `Dagre`
 
 ---
 
-### DriveIQ: Dashcam Driving Behavior Analysis
+### DriveIQ: Smart Driving Analysis Platform
 *Computer vision + explainable scoring*
 
-Analyzes dashcam footage with **YOLOv8** and **Farneback optical flow**, scores behavior with **XGBoost**, attributes decisions with **SHAP** and turns them into coaching feedback with **Flan-T5**.
+Analyzes live and uploaded driving video to detect vehicles, extract behavior features and score a trip.
 
-`YOLOv8` `OpenCV` `XGBoost` `SHAP` `MongoDB` `JWT` `React`
+- **YOLOv8** and optical flow extract driving-behavior features from video
+- An **XGBoost** model scores behavior, with EMA smoothing for stable real-time predictions
+- **SHAP** identifies the behaviors that lowered the score and drives targeted coaching feedback
+- Frame-level predictions are converted into segments so events like harsh braking are easy to locate and explain
+
+`Python` `Flask` `YOLOv8` `OpenCV` `XGBoost` `SHAP`
 
 ---
 
@@ -74,21 +74,31 @@ Analyzes dashcam footage with **YOLOv8** and **Farneback optical flow**, scores 
 
 | Area | Tools |
 |---|---|
-| **Languages** | Python, C++, SQL, TypeScript, JavaScript |
-| **Backend** | FastAPI, Flask, SQLAlchemy, Pydantic, Alembic, JWT auth |
-| **Data** | PostgreSQL, pgvector, MongoDB, Redis |
+| **Languages** | Python, C++, SQL, HTML, CSS |
+| **Backend** | FastAPI, Flask, REST APIs, JWT Authentication, Session Management |
+| **Databases** | PostgreSQL, MongoDB, MySQL, SQLite |
 | **Async and Queues** | Celery, Redis |
-| **AI / ML** | RAG, Hugging Face, XGBoost, SHAP, Prophet, YOLOv8 |
-| **Frontend** | React, Vite, Recharts |
-| **Deployment** | Render, Vercel, Neon, Upstash |
+| **AI / ML** | XGBoost, NLP, SHAP, Sentence Transformers, FAISS, OpenCV, YOLOv8 |
+| **Frontend** | React, React Flow |
+| **Tools and Deployment** | Git, GitHub, Docker, Postman, Render, Vercel, Neon, Upstash |
 
 ---
 
 ## Currently Working On
 
-- **DecisionIQ**: building the API gateway and deploying the services to the cloud
+- **DecisionIQ**: final-year project, an AI-powered business risk platform for SMEs. I own the API gateway and cloud deployment
 - **Prepify**: hardening the study session, notes and summarization flow
-- Deepening my understanding of cloud deployment and DevOps
+- Going deeper on cloud deployment and DevOps
+
+---
+
+## Leadership
+
+**Senior Committee Member (Content Head), IETE TSEC, 2025 to 2026**
+
+- Created content and engagement campaigns to grow student participation in IETE TSEC initiatives
+- Coordinated technical workshops, hackathon activities and student events
+- Judged and mentored at Newbiethon, guiding first-year students through their projects
 
 ---
 
@@ -96,8 +106,8 @@ Analyzes dashcam footage with **YOLOv8** and **Farneback optical flow**, scores 
 
 <div align="center">
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&theme=tokyonight&hide_border=true)
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&theme=tokyonight&hide_border=true)
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=Bhendi-J&show_icons=true&theme=tokyonight&hide_border=true)
+![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Bhendi-J&layout=compact&theme=tokyonight&hide_border=true)
 
 </div>
 
@@ -107,8 +117,7 @@ Analyzes dashcam footage with **YOLOv8** and **Farneback optical flow**, scores 
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR_LINKEDIN)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:YOUR_EMAIL)
-[![Portfolio](https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://YOUR_PORTFOLIO_URL)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jatinnimje)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jatinnimje288@gmail.com)
 
 </div>
